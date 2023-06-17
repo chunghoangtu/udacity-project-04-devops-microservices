@@ -1,11 +1,11 @@
-[2023-06-17 15:11:18,071] INFO in app: JSON payload:
+[2023-06-17 15:45:39,339] INFO in app: JSON payload:
 {'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
-[2023-06-17 15:11:18,088] INFO in app: Inference payload DataFrame:
+[2023-06-17 15:45:39,371] INFO in app: Inference payload DataFrame:
    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  6.575  296.0     15.3  396.9   4.98
-[2023-06-17 15:11:18,102] INFO in app: Scaling Payload:
+[2023-06-17 15:45:39,397] INFO in app: Scaling Payload:
    CHAS     RM    TAX  PTRATIO      B  LSTAT
 0     0  6.575  296.0     15.3  396.9   4.98
-[2023-06-17 15:11:18,106] INFO in app: The Output Prediction value: [20.35373177134412]     
+[2023-06-17 15:45:39,404] INFO in app: The Output Prediction value: [20.35373177134412]
 
-172.17.0.1 - - [17/Jun/2023 15:11:18] "POST /predict HTTP/1.1" 200 -
+172.17.0.1 - - [17/Jun/2023 15:45:39] "POST /predict HTTP/1.1" 200 -
