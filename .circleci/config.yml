@@ -4,6 +4,18 @@
 #
 version: 2
 jobs:
+  pylint_version:
+    docker:
+      - image: python:3.7.3-stretch
+    steps:
+      - checkout
+      - run:
+          name: Install Pylint
+          command: pip install pylint
+      - run:
+          name: Check Pylint Version
+          command: pylint --version
+
   build:
     docker:
       # Use the same Docker base as the project
@@ -30,6 +42,7 @@ jobs:
             # Install hadolint
             wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
             chmod +x /bin/hadolint
+  
       - save_cache:
           paths:
             - ./venv
