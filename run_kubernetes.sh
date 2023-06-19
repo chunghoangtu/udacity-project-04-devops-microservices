@@ -14,10 +14,10 @@ kubectl run udacity-prj4 --image=$dockerpath:latest --port 80
 
 # Step 3:
 # List kubernetes pods
+sleep 20s
 kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
 sleep 60s
 kubectl port-forward pod/udacity-prj4 8000:80
-
